@@ -2,74 +2,73 @@
 
 I build systems across **cloud security, network engineering, and data analytics** — with a focus on real-world architectures, security validation, and end-to-end pipelines.
 
-Currently focused on:
-- Cloud security analysis & detection engineering
-- Network architecture & automation (Cisco, FortiGate)
-- Cybersecurity labs & vulnerability assessment
-- Data-driven investigation pipelines
+## ⚡ What I Actually Do
+
+- Build **security detection pipelines** from raw logs to actionable insights  
+- Design **high-availability network architectures** with redundancy and failover  
+- Develop **data models and analytics systems** for investigation workflows  
+- Implement **infrastructure-as-code** for repeatable, deterministic environments  
+- Run **controlled security assessments** with full exploitation → mitigation cycles  
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Selected Work
 
 ### 🔐 Cloud Security Analyzer
-Cloud security analysis pipeline that detects AWS misconfigurations and suspicious activity from CloudTrail-style logs.
+End-to-end AWS log analysis pipeline for detecting misconfigurations and suspicious activity.
 
-- Modular architecture: parser → detection → reporting → dashboard
-- Normalizes raw cloud logs into structured datasets
-- Detects IAM abuse, public exposure, and anomalous behavior
-- Local dashboard for interactive investigation
+- Parses and normalizes CloudTrail-style logs
+- Detection engine for IAM abuse, privilege escalation, and exposure risks
+- Structured reporting + local investigation dashboard
+- Built as a modular pipeline (parser → detection → reporting → UI)
 
 ---
 
 ### 🌐 Enterprise Campus Network Architecture
-Multi-phase network engineering project simulating a corporate campus evolving into a high-availability environment.
+Multi-phase network build simulating real enterprise evolution.
 
-- VLAN segmentation, trunking, and inter-VLAN routing
-- HSRP for gateway redundancy
-- LACP for link aggregation
-- Firewall high availability (HA)
-- Automated configuration management
+- VLAN segmentation and trunking at scale  
+- HSRP-based gateway redundancy  
+- LACP for link aggregation and bandwidth scaling  
+- Firewall high availability (HA)  
+- Configuration automation across devices  
 
 ---
 
 ### 💳 Banking Fraud Detection Analytics
-SQL-powered fraud detection pipeline with analytical modeling and visualization.
+Fraud detection system built on SQL-first analytics.
 
-- Star schema design for transaction analysis
-- Fraud pattern detection using SQL queries
-- Power BI dashboard for investigation workflows
-- Focus on explainable fraud indicators
+- Star schema for transaction intelligence  
+- Query-driven fraud pattern detection  
+- Power BI dashboard for investigative workflows  
+- Focus on traceability and explainable signals  
 
 ---
 
 ### ⚙️ Declarative Network Provisioning
-Infrastructure-as-Code framework for deterministic VLAN provisioning.
+Infrastructure-as-Code for multi-vendor network environments.
 
-- Declarative configs → automated device provisioning
-- Supports Cisco IOS and FortiGate
-- Ensures consistency across network environments
-- Reduces manual configuration drift
+- Declarative configs → deterministic provisioning  
+- Cisco IOS + FortiGate support  
+- Eliminates config drift and manual inconsistency  
 
 ---
 
-### 📊 Focus Ledger Study Tracker
-Personal productivity system built from CLI to web app.
+### 📊 Focus Ledger
+From CLI tool to full analytics dashboard.
 
-- Python CLI → Streamlit dashboard evolution
-- SQLite backend with pandas analytics
-- Tracks study sessions and performance trends
-- Matplotlib-based visual insights
+- Python + SQLite + pandas pipeline  
+- Streamlit interface for visualization  
+- Tracks behavioral patterns, not just activity  
 
 ---
 
 ### 🛡️ Host-Based Vulnerability Assessments
-Controlled lab environment for security testing on Linux systems.
+Hands-on security lab, not scan-and-report.
 
-- Structured vulnerability assessment methodology
-- Enumeration → exploitation → mitigation workflow
-- Focus on real-world misconfigurations
-- Documents security hardening practices
+- Full workflow: enumeration → exploitation → mitigation  
+- Focus on real misconfigurations and privilege escalation paths  
+- Documents hardening strategies, not just findings  
 
 ---
 
@@ -78,26 +77,27 @@ Controlled lab environment for security testing on Linux systems.
 I focus on:
 - Building **end-to-end systems**, not isolated scripts
 - Understanding **how things break**, not just how they work
-- Applying **real-world architectures** (not toy examples)
+- Applying **real-world architectures** 
 - Documenting projects like **production systems**
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Stack
 
 **Languages:** Python, SQL, Java, C  
-**Tools:** Linux, Git, Streamlit, Power BI  
-**Networking:** VLANs, HSRP, LACP, OSPF, Firewall HA  
-**Security:** Cloud log analysis, vulnerability assessment, detection logic  
-**Concepts:** System design, data modeling, infrastructure automation  
+**Systems:** Linux, Git  
+**Data:** SQLite, pandas, Power BI  
+**Networking:** VLANs, OSPF, HSRP, LACP, Firewall HA  
+**Security:** Log analysis, detection logic, vulnerability assessment  
+**Approach:** System design, data modeling, infrastructure automation  
 
 ---
 
-## 📌 Current Direction
+## 🎯 Direction
 
-- Advancing in **cloud security & detection engineering**
-- Building **hands-on cybersecurity labs**
-- Expanding **network automation and IaC workflows**
+- Cloud Security Engineering  
+- Detection Engineering and Data Analysis
+- Network Automation & Infrastructure  
 
 ---
 
