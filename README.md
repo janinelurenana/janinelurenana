@@ -1,4 +1,4 @@
-# Hi, I'm Janine Lureñana
+# Hi, I'm Janine
 
 I build systems across **cloud security, network engineering, and data analytics** — with a focus on real-world architectures, security validation, and end-to-end pipelines.
 
