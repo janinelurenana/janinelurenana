@@ -104,4 +104,4 @@ I focus on:
 ## 📫 Contact
 
 - GitHub: janinelurenana
-- LinkedIn: [https://www.linkedin.com/in/lurenanachristellejanine/] (https://www.linkedin.com/in/lurenanachristellejanine/)
+- LinkedIn: https://www.linkedin.com/in/lurenanachristellejanine/
