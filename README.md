@@ -8,7 +8,6 @@ I build systems across **cloud security, network engineering, and data analytics
 - Design **high-availability network architectures** with redundancy and failover  
 - Develop **data models and analytics systems** for investigation workflows  
 - Implement **infrastructure-as-code** for repeatable, deterministic environments  
-- Run **controlled security assessments** with full exploitation → mitigation cycles  
 
 ---
 
@@ -60,15 +59,6 @@ From CLI tool to full analytics dashboard.
 - Python + SQLite + pandas pipeline  
 - Streamlit interface for visualization  
 - Tracks behavioral patterns, not just activity  
-
----
-
-### 🛡️ Host-Based Vulnerability Assessments
-Hands-on security lab, not scan-and-report.
-
-- Full workflow: enumeration → exploitation → mitigation  
-- Focus on real misconfigurations and privilege escalation paths  
-- Documents hardening strategies, not just findings  
 
 ---
 
