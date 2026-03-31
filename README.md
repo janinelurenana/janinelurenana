@@ -18,7 +18,7 @@ End-to-end AWS log analysis pipeline for detecting misconfigurations and suspici
 
 - Parses and normalizes CloudTrail-style logs
 - Detection engine for IAM abuse, privilege escalation, and exposure risks
-- Structured reporting + local investigation dashboard
+- Structured reporting + deployed investigation dashboard
 - Built as a modular pipeline (parser → detection → reporting → UI)
 
 ---
