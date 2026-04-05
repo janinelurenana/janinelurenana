@@ -1,122 +1,131 @@
-# 👋 Hi, I’m Christelle Janine
+# 👋 Hi, I'm Christelle Janine Lureñana
 
-**Christelle Janine M. Lureñana**  
-IT Student · Security Detection & Network Automation  
-Polytechnic University of the Philippines (GPA: 1.23 / 1.00)  
+**Security Detection · Network Engineering · Automation**  
+Polytechnic University of the Philippines · GPA: 1.23 / 1.00
 
 ---
 
 ## 🧠 About Me
 
-I’m a sophomore IT student focused on the intersection of **security detection** and **network infrastructure**.
+I build **detection systems and network infrastructure that hold under real conditions**, not just controlled labs.
 
-My work follows a consistent pattern:
-take a real operational problem—misconfigured cloud resources, anomalous transactions, inconsistent device configs—and build systems that **detect or prevent issues systematically**, not manually.
+My work focuses on:
 
-Current work includes:
+* Translating ambiguous security problems into **repeatable detection logic**
+* Designing networks with **enforced boundaries and validated failover**
+* Automating infrastructure with **state verification, not just deployment**
 
-* Cloud security posture analysis (Python, MITRE ATT&CK–mapped detection rules)
-* SQL-based anomaly detection modeled after SIEM correlation logic
-* Enterprise network architecture (GNS3, FortiGate HA with measured failover)
-* YAML-driven multi-vendor network provisioning with drift detection
+Most student projects stop at *“it works.”*
+Mine are built to answer:
 
-I focus on closing the gap between:
-
-> *“it works in a lab”* vs *“it holds under failure conditions.”*
+> *Does it still work under failure, scale, and misconfiguration?*
 
 ---
 
-## 🚀 Featured Projects
+## ⚙️ What I Actually Do
 
-### 🔐 Cloud Security Analyzer
+* Build **SIEM-style detection logic** from raw logs (not dashboards on clean data)
+* Design **segmented enterprise networks** with measurable resilience
+* Implement **network-as-code pipelines** with drift detection
+* Develop **risk-based anomaly detection systems** using SQL correlation logic
+
+---
+
+## 🚀 Selected Work
+
+### 🔐 Cloud Security Detection Engine
 
 **Repo:** [https://github.com/janinelurenana/cloud-security-analyzer](https://github.com/janinelurenana/cloud-security-analyzer)
 
-* Built a modular Python pipeline to analyze CloudTrail-style logs
-* Runs **8 configurable detection rules** across simulated cloud resources
-* Outputs **43 severity-ranked findings** via Streamlit dashboard
+Built a modular detection pipeline that processes CloudTrail-style logs and produces **severity-ranked, MITRE ATT&CK–mapped findings**.
 
-**Key Design Decision:**
-Detection thresholds are fully decoupled from logic via config files—mirroring how real SIEM rule engines operate.
+* 8 detection rules across 26 simulated cloud resources
+* 43 validated findings surfaced via Streamlit
+* Config-driven thresholds (no hardcoded detection logic)
 
-**Credibility Signals:**
+**What matters:**
 
-* MITRE ATT&CK–mapped detections:
+* Detection logic is **decoupled from thresholds** → mirrors real SIEM rule design
+* Outputs are **explicitly mapped to attacker behavior**, not generic alerts
 
-  * T1078 (Valid Accounts / Privilege Abuse)
-  * T1098 (Account Manipulation)
-  * T1110 (Brute Force)
-* Not generic alerts—explicit threat classification
+**Mapped Techniques:**
+
+* T1078 — Valid Accounts / Privilege Abuse
+* T1098 — Account Manipulation
+* T1110 — Brute Force
 
 ---
 
-### 🌐 Enterprise Campus Network Architecture
+### 🌐 Enterprise Network Architecture (HA + Segmentation)
 
 **Repo:** [https://github.com/janinelurenana/Enterprise-Campus-Network-Architecture](https://github.com/janinelurenana/Enterprise-Campus-Network-Architecture)
 
-* Designed full Layer 3 enterprise topology in GNS3
-* VLAN segmentation across IT, HR, Guest, and DMZ zones
-* Enforced least privilege using ACLs
-* Implemented FortiGate Active–Passive HA
+Designed and validated a segmented campus network with **enforced least privilege and high availability**.
 
-**Key Validation:**
+* VLAN segmentation: IT, HR, Guest, DMZ
+* ACL-enforced zone isolation (not theoretical)
+* FortiGate Active–Passive HA
 
-* ~1 second failover convergence (measured, not assumed)
-* Session preservation under link failure
+**Validation, not assumption:**
 
-**Credibility Signals:**
+* ~1 second failover convergence
+* Session persistence during link failure
 
-* Documented HSRP convergence (5–10s)
-* DMZ east–west restrictions enforced via ACLs
-* Currently extending to multi-site OSPF + IPsec VPN
+**Additional work:**
+
+* Documented HSRP convergence behavior (5–10s)
+* Extending to multi-site OSPF + IPsec VPN
 
 ---
 
-### ⚙️ Declarative Network Provisioning
+### ⚙️ Declarative Network Automation + Drift Detection
 
 **Repo:** [https://github.com/janinelurenana/declarative-network-provisioning](https://github.com/janinelurenana/declarative-network-provisioning)
 
-* Built a **YAML → Jinja2 → Netmiko** pipeline for network automation
-* Declarative configuration deployment across multi-vendor devices
+Built a **multi-vendor network-as-code pipeline**:
 
-**Key Feature:**
+YAML → Jinja2 → Netmiko → Device Configuration → State Verification
 
-* **Bidirectional drift detection**
+**Key capability:**
 
-  * Detects missing configs *and* unauthorized changes
+* Drift detection is **bidirectional**
 
-**Credibility Signals:**
+  * Detects missing intended config
+  * Detects unauthorized changes
 
-* Multi-vendor support (not single-platform scripting)
-* Architecture mirrors real-world tools (Ansible / Nornir)
+**Why this matters:**
+Most automation scripts push configs.
+This enforces **state integrity**, which is what production environments actually need.
 
 ---
 
-### 💳 Banking Fraud Detection Analytics
+### 💳 Fraud Detection via SQL Correlation Logic
 
 **Repo:** [https://github.com/janinelurenana/banking-fraud-detection-analytics](https://github.com/janinelurenana/banking-fraud-detection-analytics)
 
-* Built a SQL-based anomaly detection engine across 5,500 transactions
-* Uses **weighted risk scoring** over multi-table joins
+Built a transaction analysis system using **weighted anomaly scoring**, not simple thresholds.
 
-**Detection Logic Includes:**
+* 5,500 transactions across 200 accounts
+* Multi-table joins with CASE-based scoring
 
-* Velocity abuse
-* Geographic anomalies
-* High-value transaction outliers
+**Detection includes:**
 
-**Key Design Insight:**
+* Velocity anomalies
+* Geographic inconsistencies
+* High-value outliers
 
-* Composite scoring prevents false positives—mirrors SIEM correlation logic
+**Key insight:**
+Single signals don’t trigger alerts—**combined risk does**
+→ aligns with real SIEM correlation logic
 
-**Credibility Signals:**
+**Output:**
 
-* Star schema ETL → Power BI dashboards
-* SOC-style visualizations with geographic threat clustering
+* Star schema → Power BI dashboards
+* Geographic threat clustering for interpretability
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Stack
 
 **Security**
 
@@ -131,13 +140,13 @@ Detection thresholds are fully decoupled from logic via config files—mirroring
 * IPsec VPN · HSRP / VRRP
 * NAT · STP
 
-**Programming**
+**Programming / Automation**
 
 * Python · SQL
 * Jinja2 · YAML
 * Pandas · Streamlit · Netmiko
 
-**Tools**
+**Tooling**
 
 * Power BI · MySQL
 * AWS CloudTrail
@@ -146,31 +155,27 @@ Detection thresholds are fully decoupled from logic via config files—mirroring
 
 ---
 
-## 🎯 Current Focus
+## 📈 Current Direction
 
-**In Progress**
+* Multi-site network simulation (OSPF + IPsec WAN)
+* Detection engineering aligned with SOC workflows via TryHackMe
+* CompTIA Security+ (target: Q3 2026)
 
-* Multi-site OSPF + IPsec VPN (WAN simulation)
-* TryHackMe SOC Level 1 path (structured SOC analyst training)
-* CompTIA Security+ (Target: Q3 2026)
+---
 
-**Recently Shipped**
+## 🤝 Opportunities
 
-* Declarative network provisioning with drift detection (March 2026)
-* Cloud security analyzer with MITRE ATT&CK detections (March 2026)
+Open to **junior-level roles**, not just internships:
+
+* Security Analyst
+* Network Engineer
+* Detection Engineer (entry/junior)
 
 ---
 
 ## 📬 Contact
 
-* 📧 Email: [lchristellejanine@gmail.com](mailto:lchristellejanine@gmail.com)
-* 🔗 LinkedIn: [https://linkedin.com/in/lurenanachristellejanine](https://linkedin.com/in/lurenanachristellejanine)
+* Email: [lchristellejanine@gmail.com](mailto:lchristellejanine@gmail.com)
+* LinkedIn: [https://linkedin.com/in/lurenanachristellejanine](https://linkedin.com/in/lurenanachristellejanine)
 
 ---
-
-## 🤝 Open To
-
-* Security Analyst Intern
-* Network Engineer Intern (Philippines)
-
-⏱️ Response time: ~24 hours
